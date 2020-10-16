@@ -20,7 +20,7 @@ If you find our methods useful, please consider citing:
 ## Introduction
 Adversarial distribution training (ADT) is a new framework to train robust deep learning models. It is formulated as a minimax optimization problem, in which the inner maximization aims to find an **adversarial distribution** for each natural input to characterize potential adversarial examples; and the outer minimization aims to optimize DNN parameters with the worst-case adversarial distributions.
 
-In this paper, we proposed three different approaches to parameterize the adversarial distributions, as specified below. 
+In this paper, we proposed three different approaches to parameterize the adversarial distributions, as illustrated below. 
 
 <img src="algos_adt.jpg">
 
@@ -114,3 +114,9 @@ We have provided the pre-trained models on CIFAR-10, whose performance is report
 + ADT<sub>EXP</sub>: [http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-exp.pt](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-exp.pt)
 + ADT<sub>EXP-AM</sub>: [http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-exp.pt](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-expam.pt)
 + ADT<sub>IMP-AM</sub>: [http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-exp.pt](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-impam.pt)
+
+## Contact
+
+Yinpeng Dong: dyp17@mails.tsinghua.edu.cn
+
+Zhijie Deng: dzj17@mails.tsinghua.edu.cn
