@@ -1,8 +1,28 @@
 # Adversarial Distributional Training
 
-This repository contains the code for adversarial distributional training (ADT) of our submission: *Adversarial Distributional Training for Robust Deep Learning*, to NeurIPS 2020.
+This repository contains the code for **adversarial distributional training (ADT)** introduced in the following paper
 
-<img src="algos_adt.pdf">
+[Adversarial Distributional Training for Robust Deep Learning](https://arxiv.org/abs/2002.05999) (NeurIPS 2020)
+
+[Yinpeng Dong](http://ml.cs.tsinghua.edu.cn/~yinpeng)\*, [Zhijie Deng](http://ml.cs.tsinghua.edu.cn/~zhijie)\*, [Tianyu Pang](http://ml.cs.tsinghua.edu.cn/~tianyu), [Hang Su](http://www.suhangss.me), and [Jun Zhu](http://ml.cs.tsinghua.edu.cn/~jun/index.shtml) (\* indicates equal contribution)
+
+### Citation
+If you find our methods useful, please consider citing:
+
+	@inproceedings{dong2020adversarial,
+	  title={Adversarial Distributional Training for Robust Deep Learning},
+	  author={Dong, Yinpeng and Deng, Zhijie and Pang, Tianyu and Su, Hang and Zhu, Jun},
+	  booktitle={Advances in Neural Information Processing Systems},
+	  year={2020}
+	}
+
+
+## Introduction
+Adversarial distribution training (ADT) is a new framework to train robust deep learning models. It is formulated as a minimax optimization problem, in which the inner maximization aims to find an **adversarial distribution** for each natural input to characterize potential adversarial examples; and the outer minimization aims to optimize DNN parameters with the worst-case adversarial distributions.
+
+In this paper, we proposed three different approaches to parameterize the adversarial distributions, as specified below. 
+
+<img src="algos_adt.jpg">
 
 Figure 1: An illustration of three different ADT methods, including (a) ADT<sub>EXP</sub>; (b) ADT<sub>EXP-AM</sub>; (c) ADT<sub>IMP-AM</sub>.
 
@@ -89,4 +109,8 @@ python spsa.py --model-path ${MODEL-PATH} --samples_per_draw 256 (or 512/1024/20
 
 ## Pretrained Models
 
-We will release the pretrained models after the review process. It's easy to reproduce the results in our paper, as ADT<sub>EXP-AM</sub> and ADT<sub>IMP-AM</sub> need less than one GPU day to finish training.
+We have provided the pre-trained models on CIFAR-10, whose performance is reported in Table 1. They can be downloaded at 
+
++ ADT<sub>EXP</sub>: [http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-exp.pt](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-exp.pt)
++ ADT<sub>EXP-AM</sub>: [http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-exp.pt](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-expam.pt)
++ ADT<sub>IMP-AM</sub>: [http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-exp.pt](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-impam.pt)
