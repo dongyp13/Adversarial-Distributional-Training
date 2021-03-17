@@ -112,8 +112,8 @@ python spsa.py --model-path ${MODEL-PATH} --samples_per_draw 256 (or 512/1024/20
 We have provided the pre-trained models on CIFAR-10, whose performance is reported in Table 1. They can be downloaded at 
 
 + ADT<sub>EXP</sub>: [http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-exp.pt](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-exp.pt)
-+ ADT<sub>EXP-AM</sub>: [http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-exp.pt](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-expam.pt)
-+ ADT<sub>IMP-AM</sub>: [http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-exp.pt](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-impam.pt)
++ ADT<sub>EXP-AM</sub>: [http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-expam.pt](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-expam.pt)
++ ADT<sub>IMP-AM</sub>: [http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-impam.pt](http://ml.cs.tsinghua.edu.cn/~yinpeng/downloads/ADT-models/adt-impam.pt)
 
 ## Contact
 
